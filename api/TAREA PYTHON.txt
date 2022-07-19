@@ -1,0 +1,31 @@
+TAREA PYTHON
+-------------------------------------------------------------
+
+1) Crear DB en SQLLite con dos tablas
+  -- APIQueries  id*, pais text, fecha text
+  -- APIData   idData*, idQuery*, confirmados, activos, provincia   FK( idQuery:APIDATA = id:APIQueries )
+2) Mostrar los queries existentes (APIQueries)
+3) Con el ID del Query mostrar los datos guardados (APIData)
+4) Agregar Data desde la API, 
+  a) Obtener los parametros (pais y fecha) 
+  b) validar que no exista ya en APIQueries
+  c) Crear registro con el Query (APIQueries) (obtener el ID)
+  d) Cargar la data (json) desde el API
+  e) Guardar esa data en APIData
+  f) Mostrar la Data guardada en APIData del queryID
+5) Regresar a paso 2
+
+EJEMPLO
+----------------------------------------
+API CACHE SYSTEM COVID API
+----------------------------------------
+1  MEX  2022-07-10
+2  HND  2022-07-17
+3  USD  2022-07-10
+
+----------------------------------------
+M   Mostrar Guardado en DB
+A   Agregar nueva consulta a API a DB
+S   Salir
+
+----------------------------------------
